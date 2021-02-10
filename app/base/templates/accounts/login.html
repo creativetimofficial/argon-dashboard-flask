@@ -1,0 +1,70 @@
+{% extends 'layouts/base-fullscreen.html' %}
+
+{% block title %} Login {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Page content -->
+    <div class="container mt--8 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="card bg-secondary border-0 mb-0">
+            <div class="card-body px-lg-5 py-lg-5 text-center">
+
+              <h3 class="mb-4 text-center">Login</h3>
+
+              <span class="mb-0 text-muted text-center">
+                  {% if msg %}
+                      {{ msg | safe }}
+                  {% else %}
+                      Add your credentials
+                  {% endif %} 
+              </span>      
+
+              <br />
+              <br />
+
+              <form role="form" method="post" action="">
+
+                {{ form.hidden_tag() }}                    
+
+                <div class="input-group mb-3">
+                    {{ form.username(placeholder="Username", class="form-control") }}
+                </div>
+                
+                <div class="input-group mb-4">
+                    {{ form.password(placeholder="Password", class="form-control", type="password") }}
+                </div>
+                
+                <div class="form-group text-left">
+                    <div class="checkbox checkbox-fill d-inline">
+                        <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
+                        <label for="checkbox-fill-a1" class="cr"> Save Details</label>
+                    </div>
+                </div>
+                <button type="submit" name="login" class="btn btn-primary shadow-2 mb-4">Login</button>
+
+            </form>
+
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <a href="{{ url_for('base_blueprint.register') }}" class="text-light"><small>Create Account</small></a>
+            </div>
+            <div class="col-6 text-right">
+              <a target="_blank" href="https://www.creative-tim.com/support" class="text-light"><small>Get Support</small></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}{% endblock javascripts %}

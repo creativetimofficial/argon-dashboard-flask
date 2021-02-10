@@ -9,7 +9,7 @@
 > Free product - **Flask Dashboard** starter project - Features:
 
 - UI Kit: **Argon Dashboard** (Free Version) provided by **[Creative-Tim](https://www.creative-tim.com/)**
-- [Codebase](https://github.com/app-generator/boilerplate-code-flask-dashboard) - provided by **[AppSeed](https://appseed.us/)**
+- Flask Codebase - provided by **[AppSeed](https://appseed.us/)**
 - SQLite, PostgreSQL, SQLAlchemy ORM
 - Alembic (DB schema migrations)
 - Modular design with **Blueprints**

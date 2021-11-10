@@ -50,8 +50,8 @@
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/black-dashboard-flask.git
-$ cd black-dashboard-flask
+$ git clone https://github.com/app-generator/argon-dashboard-flask.git
+$ cd argon-dashboard-flask
 ```
 
 > Start the app in Docker

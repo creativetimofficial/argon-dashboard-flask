@@ -1,5 +1,5 @@
 flask==2.0.1
-flask_login==0.5.0
+flask_login==0.6.2
 flask_migrate==3.1.0
 WTForms==2.3.3
 flask_wtf==0.15.1
